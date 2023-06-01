@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 // Controll Auth routing
 Auth::routes([
-    'register' => false,  // ユーザー登録用のルート。デフォルトは true
+    'register' => true,  // ユーザー登録用のルート。デフォルトは true
     'reset'    => false,  // パスワードリセット用のルート。デフォルトは true
     'confirm'  => false,  // パスワード確認用のルート。Auth\ConfirmPasswordController が存在すればデフォルトは true
     'verify'   => true,  // メール確認用のルート。デフォルトは false
