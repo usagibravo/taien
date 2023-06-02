@@ -15,16 +15,22 @@
                             @endforeach
                         </ul>
                     @endif
-                   <div class="form-group row">
+                    <div class="form-group row">
                         <label class="col-md-2">タイトル</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="title" value="{{ $news_form->title }}">
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-md-2">投稿日付</label>
+                        <div class="col-md-10">
+                            <input type="datetime-local" class="form-control" name="dated_at" value="{{ $news_form->dated_at }}" pattern="nnnn-nn-nnTnn:nn">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-md-2">本文</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ $news_form->body }}</textarea>
+                            <textarea class="form-control" name="body" rows="15">{{ $news_form->body }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">

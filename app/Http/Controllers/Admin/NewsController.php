@@ -97,7 +97,7 @@ class NewsController extends Controller
         unset($news_form['_token']);
         
         $news->fill($news_form)->save();
-     
+      
         return redirect('admin/news');
     }
     

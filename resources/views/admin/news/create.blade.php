@@ -22,6 +22,12 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-md-2">投稿日時</label>
+                        <div class="col-md-10">
+                            <input type="datetime-local" class="form-control" name="dated_at" value="{{ old('dated_at') }}" plattern="nnnn-nn-nnTnn:nn">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-md-2">本文</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
