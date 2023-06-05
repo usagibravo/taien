@@ -5,23 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/favicon.ico">
+        <meta name="keywords" content="大野泰園,泰園,書家,書道家,東京,書道師範,公益財団法人日本書道教育学会,書学院,">
+        <meta name="description" content="書家　大野泰園のウェブサイト">        
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+        {{-- 各ページごとにtitleタグを入れるために@yieldで空けておきます。 --}}
         <title>@yield('title')</title>
-
-        <!-- Fonts
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-        -->
+        
         <!-- Scripts -->
-        @vite(['resources/sass/app.scss', 'resources/sass/admin.scss', 'resources/js/app.js'])
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
     <body>
         <div id="app">
-            {{-- 画面上部に表示するナビゲーションバーです。 --}}
-            <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
+            <header>
+                Header
+            </header>
+            <nav class="navbar navbar-expand-md navbar-black navbar-laravel">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
@@ -68,12 +69,14 @@
                     </div>
                 </div>
             </nav>
-            {{-- ここまでナビゲーションバー --}}
 
-            <main class="py-4">
-                {{-- コンテンツをここに入れるため、@yieldで空けておきます。 --}}
+            <article>
                 @yield('content')
-            </main>
+            </article>
+
+            <footer>
+                Footer
+            </footer>
         </div>
     </body>
 </html>
