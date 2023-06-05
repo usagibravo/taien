@@ -1,12 +1,12 @@
 @extends('layouts.admin')
-@section('title', 'ニュースの編集')
+@section('title', '作品の編集')
 
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>ニュースの編集</h2>
-                <form action="{{ route('admin.news.update') }}" method="post" enctype="multipart/form-data">
+                <h2>作品の編集</h2>
+                <form action="{{ route('admin.work.update') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     @if (count($errors) > 0)
                         <ul>
@@ -18,27 +18,27 @@
                     <div class="form-group row">
                         <label class="col-md-2">タイトル</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ $news_form->title }}">
+                            <input type="text" class="form-control" name="title" value="{{ $work_form->title }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2">投稿日付</label>
-                        <div class="col-md-10">
-                            <input type="datetime-local" class="form-control" name="dated_at" value="{{ $news_form->dated_at }}" pattern="nnnn-nn-nnTnn:nn">
+                        <label class="col-md-2">表示順序（任意）</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" name="showing_order" value="{{ $work_form->showing_order }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2">本文</label>
+                        <label class="col-md-2">本文（任意）</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="15">{{ $news_form->body }}</textarea>
+                            <textarea class="form-control" name="body" rows="5">{{ $work_form->body }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">画像</label>
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image">
                             <div class="form-text text-info">
-                                設定中：{{ $news_form->image_path }}
+                                設定中：{{ $work_form->image_path }}
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
@@ -46,12 +46,23 @@
                                 </label>
                             </div>
                         </div>
-                        @if ($news_form->image_path)
-                            <img src="{{ asset('storage/image/' . $news_form->image_path) }}">
+                    </div>
+                    <div class="form-group row text-left mt-4">
+                        <label class="col-md-2">作品タイプ</label>
+                        <div class="col-md-3">
+                            <select name="work_type">
+                                <option value="{{ $work_form->work_type }}">{{ $work_form->work_type }}</option>
+                                <option value="漢字書">漢字書</option>
+                                <option value="ひらがな">ひらがな</option>
+                                <option value="篆刻">篆刻</option>
+                            </select>
+                        </div>
+                        @if ($work_form->image_path)
+                            <img src="{{ asset('storage/image/' . $work_form->image_path) }}">
                         @endif
                     </div>
                     <div class="form-group row">
-                            <input type="hidden" name="id" value="{{ $news_form->id }}">
+                            <input type="hidden" name="id" value="{{ $work_form->id }}">
                         <div class="col-md-10">
                             <input type="submit" class="btn btn-primary" value="更新">
                         </div>

@@ -41,10 +41,19 @@ body {
 
 .form-group {
   margin-bottom: 1rem;
+  img {
+    width: 250px;
+  }
 }
 
 .list-group-item {
   color: #fff;
   border-color: #fff;
   background-color: #000;
+}
+
+.list-item {
+  img {
+    width: 72px;
+  }
 }

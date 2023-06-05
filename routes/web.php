@@ -36,3 +36,13 @@ Route::controller(NewsController::class)->prefix('admin')->name('admin.')->middl
     Route::post('news/edit', 'update')->name('news.update');
     Route::get('news/delete', 'delete')->name('news.delete');
 });
+
+use App\Http\Controllers\Admin\WorkController;
+Route::controller(WorkController::class)->prefix('admin')->name('admin.')->middleware('auth')->group(function () {
+    Route::get('work', 'index')->name('work.index');
+    Route::get('work/create', 'add')->name('work.add');
+    Route::post('work/create', 'create')->name('work.create');
+    Route::get('work/edit', 'edit')->name('work.edit');
+    Route::post('work/edit', 'update')->name('work.update');
+    Route::get('work/delete', 'delete')->name('work.delete');
+});

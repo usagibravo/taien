@@ -8,9 +8,6 @@ use Illuminate\Http\Request;
 use App\Models\News; // for use of model class News
 use Illuminate\Support\Facades\Storage;
 
-use App\Models\History;
-use Carbon\Carbon;
-
 class NewsController extends Controller
 {
     //
@@ -85,7 +82,7 @@ class NewsController extends Controller
             Storage::delete('public/image/' . $news->image_path);
             $news_form['image_path'] = null;
         } elseif ($request->file('image')) {
-            var_dump($request->file('image'));
+            //  var_dump($request->file('image'));
             $path = $request->file('image')->store('public/image');
             $news_form['image_path'] = basename($path);
         } else {
