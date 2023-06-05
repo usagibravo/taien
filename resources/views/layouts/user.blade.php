@@ -20,55 +20,62 @@
     <body>
         <div id="app">
             <header>
-                Header
+                <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light row">
+                    <div class="container-fluid">
+                        <a class="navbar-brand col-md-3" href="{{ url('/') }}">
+                            <img src="storage/image/taienlogo.png" class="headerlogo" alt="大野泰園 / OhnoTaien">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-md-0 col-md-9 row">
+                                <li class="nav-item col-md-2">
+                                    <a class="nav-link" href="{{ url('/') }}">Works<br>作品</a>
+                                </li>
+                                <li class="nav-item col-md-2">
+                                    <a class="nav-link" href="{{ url('/') }}">Profile<br>プロフィール</a>
+                                </li>
+                                <li class="nav-item col-md-2">
+                                    <a class="nav-link" href="{{ url('/') }}">News<br>お知らせ</a>
+                                </li>
+                                <li class="nav-item col-md-2">
+                                    <a class="nav-link" href="{{ url('/') }}">Contact<br>お問い合わせ</a>
+                                </li>
+                            </ul>
+                        </div>
+ <!--                       <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+-->                    </div>
+                </nav>
+                <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features features features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> 
             </header>
-            <nav class="navbar navbar-expand-md navbar-black navbar-laravel">
-                <div class="container">
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav ms-auto">
-
-                        </ul>
-
-                        <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav">
-                        {{-- 以下を追記 --}}
-                        <!-- Authentication Links -->
-                        {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
-                        @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('messages.login') }}</a></li>
-                        {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
-                        @else
-                            <li class="nav-item dropdown">
-                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                 </a>
-
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('messages.logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                            @endguest
-                            {{-- 以上までを追記 --}}
-                        </ul>
-                    </div>
-                </div>
-            </nav>
 
             <article>
                 @yield('content')
