@@ -20,26 +20,26 @@
     <body>
         <div id="app">
             <header>
-                <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light row">
+                <nav class="navbar fixed-top navbar-expand-md navbar-dark">
                     <div class="container-fluid">
-                        <a class="navbar-brand col-md-3" href="{{ url('/') }}">
-                            <img src="storage/image/taienlogo.png" class="headerlogo" alt="大野泰園 / OhnoTaien">
+                        <a class="navbar-brand" href="{{ url('/') }}">
+                            <img src="../images/taienlogo.png" class="headerlogo" alt="大野泰園 / OhnoTaien">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-md-0 col-md-9 row">
-                                <li class="nav-item col-md-2">
+                            <ul class="navbar-nav ms-auto mb-md-0">
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/') }}">Works<br>作品</a>
                                 </li>
-                                <li class="nav-item col-md-2">
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/') }}">Profile<br>プロフィール</a>
                                 </li>
-                                <li class="nav-item col-md-2">
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/') }}">News<br>お知らせ</a>
                                 </li>
-                                <li class="nav-item col-md-2">
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/') }}">Contact<br>お問い合わせ</a>
                                 </li>
                             </ul>

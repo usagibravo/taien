@@ -3,8 +3,8 @@
 @section('title', '書家　大野泰園 / Shoka Ohno Taien')
 
 @section('content')
-<section>
-    Main Visual
+<section class="firstview">
+    <div class="image">Main Visual</div>
 </section>
 <section>
     Works
