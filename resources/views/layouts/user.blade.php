@@ -13,14 +13,21 @@
 
         {{-- 各ページごとにtitleタグを入れるために@yieldで空けておきます。 --}}
         <title>@yield('title')</title>
-        
+
+        <!-- Slick -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
         <!-- Scripts -->
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/main.js'])
+
     </head>
     <body>
         <div id="app">
             <header>
-                <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+                <nav class="navbar fixed-top navbar-expand-md navbar-white">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="{{ url('/') }}">
                             <img src="../images/taienlogo.png" class="headerlogo" alt="大野泰園 / OhnoTaien">
@@ -28,19 +35,19 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="container-md ms-auto collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-md-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">Works<br>作品</a>
+                                    <a class="nav-link" href="{{ url('/') }}">作品<br>Works</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">Profile<br>プロフィール</a>
+                                    <a class="nav-link" href="{{ url('/') }}">略歴<br>Profile</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">News<br>お知らせ</a>
+                                    <a class="nav-link" href="{{ url('/') }}">お知らせ<br>News</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">Contact<br>お問い合わせ</a>
+                                    <a class="nav-link" href="{{ url('/') }}">お問い合わせ<br>Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -51,7 +58,8 @@
                       </div>
 -->                    </div>
                 </nav>
-                <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+
+<!-- <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +82,7 @@
       </ul>
     </div>
   </div>
-</nav> 
+</nav> --> 
             </header>
 
             <article>
@@ -85,5 +93,6 @@
                 Footer
             </footer>
         </div>
+
     </body>
 </html>

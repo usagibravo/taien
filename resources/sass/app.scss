@@ -12,19 +12,82 @@ body {
     font-family: "Noto Sans JP", sans-serif; //ページ全体に適用する場合
 }
 
+.bg {
+    z-index: 0;
+}
+
+
+.section {
+    padding: 7rem 0; 
+}
+
+.section-slim{
+    padding: 3rem 0;
+}
+
 img.headerlogo {
     height: 72px;
 }
 
-div.image {
+div.key-image-1 {
     background-image: url(../../images/1625819_s.jpg); 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover; 
 }
 
+/*
+ * Navbar CSS
+ */
+
 .navbar {
+    .nav-item, a .nav-link{
+        width: 120px;
+        font-weight: 500;
+    }
     background: none;
 }
+.navbar-white .navbar-nav .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.659);
+}
+    
+.navbar-white .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(198, 228, 47);
+}
+
+
+/* 
+ * WORKS Section
+ */
+
+#WORKS img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.slider {
+    height: 100vh;
+    width: 100vw;
+    margin-inline: auto;
+    overflow: hidden; /* 画像がはみ出ないようにする */
+  }
+  .slick-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  @keyframes zoomUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.15); /* 拡大率 */
+    }
+  }
+  .add-animation {
+    animation: zoomUp 10s linear 0s normal both;
+  }
