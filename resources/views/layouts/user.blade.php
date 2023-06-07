@@ -38,16 +38,16 @@
                         <div class="container-md ms-auto collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-md-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">作品<br>Works</a>
+                                    <a class="nav-link" href="{{ url('/') }}">作品<br>artworks</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">略歴<br>Profile</a>
+                                    <a class="nav-link" href="{{ url('/') }}">略歴<br>profile</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">お知らせ<br>News</a>
+                                    <a class="nav-link" href="{{ url('/') }}">お知らせ<br>news</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">お問い合わせ<br>Contact</a>
+                                    <a class="nav-link" href="{{ url('/') }}">お問い合わせ<br>contact</a>
                                 </li>
                             </ul>
                         </div>

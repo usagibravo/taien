@@ -6,7 +6,7 @@
 
 $(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 150) {
             $('nav').css('transition-duration', '1s');
             $('nav').css('background-color', '#fff'); /* htmlファイルのnavタグの背景色変更 */
         } else {

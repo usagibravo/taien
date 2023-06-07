@@ -18,7 +18,7 @@
 </section>
 <section id="WORKS" class="section bg bg-light">
     <div class="container-md text-center">
-        <h1 class="mb-md-5">作品<br><span>Works</span></h1>
+        <h1 class="mb-md-5">作品<br><span>artworks</span></h1>
         <div class="row mb-md-5">
             <div class="col">
                 <a href="#KANJI">
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="button" class="btn btn-secondary" onclick="location.href='#WORKS'">作品ページへ<br><span>Goto Works Page</span></button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='#WORKS'">作品ページへ<br><span>artwork room</span></button>
         </div>
     </div>
 </section>
