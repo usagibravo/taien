@@ -1,6 +1,6 @@
 @extends('layouts.user')
 
-@section('title', '書家　大野泰園 / Shoka Ohno Taien')
+@section('title', '書家 大野泰園 / Shoka Ohno Taien')
 
 @section('content')
 <section class="firstview">
