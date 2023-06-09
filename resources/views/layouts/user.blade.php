@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/favicon.ico">
         <meta name="keywords" content="大野泰園,泰園,書家,書道家,東京,書道師範,公益財団法人日本書道教育学会,書学院,">
-        <meta name="description" content="書家　大野泰園のウェブサイト">        
+        <meta name="description" content="書家 大野泰園のウェブサイト">        
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -29,9 +29,7 @@
             <header>
                 <nav class="navbar fixed-top navbar-expand-md navbar-white">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="{{ url('/') }}">
-                            <img src="../images/taienlogo.png" class="headerlogo" alt="大野泰園 / OhnoTaien">
-                        </a>
+                        <a class="navbar-brand" href="{{ url('/') }}">泰園 Taien</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -41,7 +39,7 @@
                                     <a class="nav-link" href="{{ url('/') }}">作品<br>artworks</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">略歴<br>profile</a>
+                                    <a class="nav-link" href="#PROFILE">略歴・書歴<br>profile</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/') }}">お知らせ<br>news</a>
@@ -51,38 +49,9 @@
                                 </li>
                             </ul>
                         </div>
- <!--                       <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                      </div>
--->                    </div>
+                    </div>
                 </nav>
 
-<!-- <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features features features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> --> 
             </header>
 
             <article>
