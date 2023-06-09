@@ -28,7 +28,7 @@
             </div>
             <div class="col">
                 <a href="#HIRAGANA">
-                    <img class="mb-md-3" src="images/key-image-sho.jpg" alt="作品：ひらがな">
+                    <img class="mb-md-3" src="images/hiragana.jpg" alt="作品：ひらがな">
                 </a>
                 <h5 class="ms-md-5">ひらがな</h5>
             </div>
@@ -59,7 +59,7 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td>2010年</td>
+                            <td>2011年</td>
                             <td>書家 野尻泰煌に師事</td>
                         </tr>                        <tr>
                             <td>2023年4月</td>
