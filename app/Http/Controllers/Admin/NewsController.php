@@ -50,10 +50,10 @@ class NewsController extends Controller
         $cond_title = $request->cond_title;
         //var_dump($request->cond_title);
         if ($cond_title != '') {
-            $posts = News::where('title', $cond_title)->get();
+            $posts = News::orderBy('dated_at','desc')->where('title', 'like','%' . $cond_title . '%')->get();
         //var_dump($posts);
         } else {
-            $posts = News::all();
+            $posts = News::orderBy('dated_at','desc')->get();
         }
         
         //\Debugbar::info('デバッガーの情報ですよ');

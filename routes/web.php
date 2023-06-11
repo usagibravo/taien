@@ -12,10 +12,12 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('top');
-});
+}); */
+use App\Http\Controllers\NewsController as PublicNewsController;
+Route::get('/', [PublicNewsController::class, 'index_lp'])->name('news.index_lp');
 
 // Controll Auth routing
 Auth::routes([

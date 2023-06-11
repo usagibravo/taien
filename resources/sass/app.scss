@@ -12,6 +12,7 @@
 body {
 //    font-family: "Noto Sans JP", sans-serif; //ページ全体に適用する場合
     font-family: 'Sawarabi Mincho', serif;
+    font-size: 1rem;
 }
 
 .bg {
@@ -23,6 +24,12 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 7rem 0; 
+}
+
+.section-news {
+  width: 100vw;
+  height: auto;
+  padding: 7rem 0;
 }
 
 .sub-section {
@@ -129,10 +136,31 @@ body {
         margin-bottom: 3rem;
     }
     .profile-spacer {
-        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .profile-spacer-xs {
+        padding-bottom: 1rem;
     }
    }   
   .item2 {
     order: 2;
   }
+}
+
+/*
+ *  News Section
+ */
+
+#NEWS {
+  .news-post {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5rem;
+  }
+  .post {
+    .post-image img {
+      width: 300px;
+    }
+  }
+
 }
