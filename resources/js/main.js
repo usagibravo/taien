@@ -9,8 +9,10 @@ $(function(){
         if ($(this).scrollTop() > 150) {
             $('nav').css('transition-duration', '1s');
             $('nav').css('background-color', '#fff'); /* htmlファイルのnavタグの背景色変更 */
+            $('nav').css('--bs-navbar-padding-y', '0'); /* Shrink navbar */
         } else {
             $('nav').css('background', 'none'); /* htmlファイルのnavタグの背景色変更 */
+            $('nav').css('--bs-navbar-padding-y', '0.5rem'); /* Unshrink navbar */
         }
     });
 });
