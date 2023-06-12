@@ -51,9 +51,12 @@ body {
   }
   .nav-item, a .nav-link{
     width: 120px;
-    font-weight: 500;
   }
     background: none;
+}
+.navbar:hover {
+  background: #fff !important;
+  transition-duration: 1s !important;
 }
 .navbar-white .navbar-nav .nav-item .nav-link {
     color: rgba(0, 0, 0, 0.659);
