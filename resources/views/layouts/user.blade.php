@@ -45,7 +45,7 @@
                                     <a class="nav-link" href="#NEWS">お知らせ<br>news</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#CONTACT">お問い合わせ<br>contact</a>
+                                    <a class="nav-link" href="{{ url('/contact/edit') }}">お問い合わせ<br>contact</a>
                                 </li>
                             </ul>
                         </div>

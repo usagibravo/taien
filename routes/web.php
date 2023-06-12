@@ -19,6 +19,13 @@ Route::get('/', function () {
 use App\Http\Controllers\NewsController as PublicNewsController;
 Route::get('/', [PublicNewsController::class, 'index_lp'])->name('news.index_lp');
 
+use App\Http\Controllers\ContactController as PublicContactController;
+Route::controller(PublicContactController::class)->prefix('contact')->name('contact.')->group(function () {
+    Route::get('edit', 'edit')->name('edit');
+    Route::post('edit', 'send')->name('send');
+    Route::get('complete', 'complete')->name('complete');
+});
+
 // Controll Auth routing
 Auth::routes([
     'register' => false,  // ユーザー登録用のルート。デフォルトは true
@@ -27,7 +34,7 @@ Auth::routes([
     'verify'   => true,  // メール確認用のルート。デフォルトは false
 ]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 use App\Http\Controllers\Admin\NewsController;
 Route::controller(NewsController::class)->prefix('admin')->name('admin.')->middleware('auth')->group(function () {
