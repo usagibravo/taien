@@ -36,13 +36,13 @@
                         <div class="container-md ms-auto collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-md-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#WORKS">作品<br>artworks</a>
+                                    <a class="nav-link" href="/#WORKS">作品<br>artworks</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#PROFILE">略歴・書歴<br>profile</a>
+                                    <a class="nav-link" href="/#PROFILE">略歴・書歴<br>profile</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#NEWS">お知らせ<br>news</a>
+                                    <a class="nav-link" href="/#NEWS">お知らせ<br>news</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/contact/edit') }}">お問い合わせ<br>contact</a>
