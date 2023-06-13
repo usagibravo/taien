@@ -28,8 +28,10 @@
         <div id="app">
             <header>
                 <nav class="navbar fixed-top navbar-expand-md navbar-white">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="{{ url('/') }}">泰園 Taien</a>
+                    <div class="container-fluid px-md-3 ">
+                        <a class="navbar-brand" href="{{ url('/') }}">
+                            <img style="height: 72px" src="/images/taienLogo1.png" alt="泰園 Taien">
+                        </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -64,6 +66,7 @@
                         <img style="height: 160px" src="/images/taienLogo3.png" alt="泰園ロゴ">
                     </div>
                     <ul class="footer-bottom-list">
+                        <li class="footer-btmList-item"><a href="/">top page</a></li>
                         <li class="footer-btmList-item"><a href="/#WORKS">artworks</a></li>
                         <li class="footer-btmList-item"><a href="/#PROFILE">profile</a></li>
                         <li class="footer-btmList-item"><a href="/#NEWS">news</a></li>
