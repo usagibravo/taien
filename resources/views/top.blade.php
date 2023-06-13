@@ -109,7 +109,4 @@
         @endif
     </div>
 </section>
-<section id="CONTACT" class="section bg bg-light">
-   お問い合わせ
-</section>
 @endsection

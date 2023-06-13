@@ -58,8 +58,19 @@
                 @yield('content')
             </article>
 
-            <footer>
-                Footer
+            <footer class="footer">
+                <div class="footer-inner container-md">
+                    <div class="footer-logo">
+                        <img style="height: 160px" src="images/taienLogo3.png" alt="泰園ロゴ">
+                    </div>
+                    <ul class="footer-bottom-list">
+                        <li class="footer-btmList-item"><a href="/#WORKS">artworks</a></li>
+                        <li class="footer-btmList-item"><a href="/#PROFILE">profile</a></li>
+                        <li class="footer-btmList-item"><a href="/#NEWS">news</a></li>
+                        <li class="footer-btmList-item"><a href="/#CONTACT">contact</a></li>
+                    </ul>                    
+                    <p class="footer-copyright">© 2023 書家 大野泰園 / Ohno Taien All rights reserved.</p>
+                </div>
             </footer>
         </div>
 
