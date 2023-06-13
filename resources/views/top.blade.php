@@ -44,7 +44,7 @@
         </div>
     </div>
 </section>
-<section id="PROFILE" class="section bg bg-light">
+<section id="PROFILE" class="section-profile bg bg-light">
     <div class="profile-top sub-section container-md">
         <div class="col-md-4 item1">
             <img src="images/hiragana.jpg" alt="漢字書">
