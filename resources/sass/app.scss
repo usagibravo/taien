@@ -23,10 +23,12 @@ body {
 .section {
     width: 100vw;
     height: 100vh;
+//    overflow: hidden;
     padding: 7rem 0; 
 }
 
 .section-news {
+//  overflow: hidden;
   width: 100vw;
   height: auto;
   padding: 7rem 0;
@@ -84,8 +86,8 @@ body {
 }
 
 .slider {
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: auto;
     margin-inline: auto;
     overflow: hidden; /* 画像がはみ出ないようにする */
   }
@@ -201,6 +203,7 @@ div.footer-inner {
 
 ul.footer-bottom-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 72px;
   list-style: none;
@@ -210,6 +213,10 @@ ul.footer-bottom-list {
   color:#666;
   font-size: 1rem;
   text-decoration: none;
+}
+
+.footer-btmList-item a:hover {
+  color:#60983f;
 }
 
 .footer-btmList-item + .footer-btmList-item {
