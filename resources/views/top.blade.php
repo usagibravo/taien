@@ -45,10 +45,13 @@
     </div>
 </section>
 <section id="PROFILE" class="section bg bg-light">
-    <div class="sub-section">
-        <div class="profile-img col-img item1" alt="漢字書"></div>
-        <div class="container-sm col-text item2 mt-md-5">
-            <h2 class="mb-md-5">大野 泰園</h2>
+    <div class="profile-top sub-section container-md">
+        <div class="col-md-4 item1">
+            <img src="images/hiragana.jpg" alt="漢字書">
+        </div>
+        <div class="col-md-8 item2">
+            <div class="col-text mt-md-5">
+                <h2 class="mb-md-5">大野 泰園</h2>
             <div class="ryakureki">
                 <h3 class="">略歴</h3>
                 <p>神奈川県出身<br>書家<br>東京都在住</p>
@@ -60,22 +63,13 @@
                         <tr>
                             <td>2011年</td>
                             <td>書家 野尻泰煌に師事</td>
-                        </tr>                        <tr>
+                        </tr>
+                        <tr>
                             <td>2023年4月</td>
                             <td>公益財団法人 日本書道教育学会 書道師範コース修了</td>
                         </tr>
-                        <tr>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
                     </tbody>
                 </table>
-                <div class="profile-spacer"></div>
-                <div class="profile-spacer-xs"></div>
             </div>
         </div>
     </div>
@@ -84,28 +78,28 @@
     <div class="container-md">
         <h1 class="mb-md-5">お知らせ<br><span>news</span></h1>
         @if(!is_null($posts))
-        @foreach($posts as $post)
-        <div class="news-post col-md-10 mx-auto pt-md-5">
-            <div class="post row d-flex flex-row-reverse">
-                <div class="post-text col-md-8">
-                    <div class="title mb-md-3">
-                        <h2>{{ Str::limit($post->title, 150) }}</h2>
+            @foreach($posts as $post)
+            <div class="news-post col-md-10 mx-auto pt-md-5">
+                <div class="post row d-flex flex-row-reverse">
+                    <div class="post-text col-md-8">
+                        <div class="title mb-md-3">
+                            <h2>{{ Str::limit($post->title, 150) }}</h2>
+                        </div>
+                        <div class="body mb-md-3" >
+                            <p>{{ Str::limit($post->body, 1500) }}</p>
+                        </div>
+                        <div class="date">
+                            <p>Updated: {{ $post->dated_at }}</p>
+                        </div>
                     </div>
-                    <div class="body mb-md-3" >
-                        <p>{{ Str::limit($post->body, 1500) }}</p>
+                    <div class="post-image col-md-4">
+                        @if ($post->image_path)
+                            <img src=" {{ asset('storage/image/' . $post->image_path) }} ">
+                        @endif
                     </div>
-                    <div class="date">
-                        <p>Updated: {{ $post->dated_at }}</p>
-                    </div>
-                </div>
-                <div class="post-image col-md-4">
-                    @if ($post->image_path)
-                        <img src=" {{ asset('storage/image/' . $post->image_path) }} ">
-                    @endif
                 </div>
             </div>
-        </div>
-        @endforeach
+            @endforeach
         @endif
     </div>
 </section>

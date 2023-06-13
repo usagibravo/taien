@@ -24,7 +24,8 @@ body {
     width: 100vw;
     height: 100vh;
 //    overflow: hidden;
-    padding: 7rem 0; 
+    padding-top: 82px; 
+    padding-bottom: 120px;
 }
 
 .section-news {
@@ -92,8 +93,10 @@ body {
     overflow: hidden; /* 画像がはみ出ないようにする */
   }
   .slick-img img {
-    width: 100%;
+    display: block;
+    height: auto;
     object-fit: cover;
+    width: 100%;
     object-position: center center;
   }
   @keyframes zoomUp {
@@ -113,22 +116,21 @@ body {
  */
 
 #PROFILE {
-  .profile-img {
-    background-image: url(../../images/hiragana.jpg); 
+  //.profile-img {
+  //  background-image: url(../../images/hiragana.jpg); 
+  // }
+  .col-md-4 img {
+    display: block;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
   }
-  .col-img {
-    width: 33%;
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: cover; 
-   }   
-  .item1 {
-    order: 1;
-  }
+
   .col-text {
-    width: 67%;
+    width: 60%;
     height: 100%;
     margin-left: 5%;
+
     .ryakureki {
         margin-bottom: 5rem;
     }
@@ -142,16 +144,18 @@ body {
         font-size: 1.5rem;
         margin-bottom: 3rem;
     }
-    .profile-spacer {
-        padding-bottom: 4rem;
-    }
+  }   
+  
+  .item1 {
+    order: 1;
+  }
 
-    .profile-spacer-xs {
-        padding-bottom: 1rem;
-    }
-   }   
   .item2 {
     order: 2;
+  }
+
+  .profile-top {
+    flex-wrap: nowrap;
   }
 }
 
@@ -166,9 +170,15 @@ body {
   }
   .post {
     .post-image img {
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
     }
+
   }
+  .post.row > * {
+    padding-right: 30px;
+    padding-left: 30px;
+  } 
 
 }
 
