@@ -47,30 +47,30 @@
 <section id="PROFILE" class="section-profile bg bg-light">
     <div class="profile-top sub-section container-md">
         <div class="col-md-4 item1">
-            <img src="images/hiragana.jpg" alt="漢字書">
-        </div>
+<!--           <img src="images/hiragana.jpg" alt="漢字書">
+-->        </div>
         <div class="col-md-8 item2">
             <div class="col-text mt-md-5">
                 <h2 class="mb-md-5">大野 泰園</h2>
-            <div class="ryakureki">
-                <h3 class="">略歴</h3>
-                <p>神奈川県出身<br>書家<br>東京都在住</p>
-            </div>
-            <div class="shoreki">
-                <h3 class="">書歴</h3>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>2011年</td>
-                            <td>書家 野尻泰煌に師事</td>
-                        </tr>
-                        <tr>
-                            <td>2023年4月</td>
-                            <td>公益財団法人 日本書道教育学会 書道師範コース修了</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <div class="ryakureki">
+                    <h3 class="">略歴</h3>
+                    <p>神奈川県出身<br>書家<br>東京都在住</p>
+                </div>
+                <div class="shoreki">
+                    <h3 class="">書歴</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>2011年</td>
+                                <td>書家 野尻泰煌に師事</td>
+                            </tr>
+                            <tr>
+                                <td>2023年4月</td>
+                                <td>公益財団法人 日本書道教育学会 書道師範コース修了</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </div>
     </div>
 </section>

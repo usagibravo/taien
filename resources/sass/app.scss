@@ -125,17 +125,28 @@ body {
   //.profile-img {
   //  background-image: url(../../images/hiragana.jpg); 
   // }
+
+    background-image: url(../../images/hiragana.jpg);
+    background-position: left;
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+  
   .col-md-4 img {
     display: block;
     height: auto;
     object-fit: cover;
     width: 100%;
+    z-index: 0;
   }
 
+
   .col-text {
-    width: 60%;
+    width: auto;
     height: 100%;
-    margin-left: 5%;
+    margin-inline: 5%;
+    background-color: rgba(248, 249, 250, 0.7);
+    z-index: 10;
+    padding: 1.5rem;
 
     .ryakureki {
         margin-bottom: 5rem;
@@ -150,8 +161,8 @@ body {
         font-size: 1.5rem;
         margin-bottom: 3rem;
     }
-  }   
-  
+  }
+ 
   .item1 {
     order: 1;
   }
