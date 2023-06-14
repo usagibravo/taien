@@ -83,10 +83,10 @@
                 <div class="post row d-flex flex-row-reverse">
                     <div class="post-text col-md-8">
                         <div class="title mb-md-3">
-                            <h2>{{ Str::limit($post->title, 150) }}</h2>
+                            <h2>{!! Str::limit(nl2br(e($post->title)), 150) !!}</h2>
                         </div>
                         <div class="body mb-md-3" >
-                            <p>{{ Str::limit($post->body, 1500) }}</p>
+                            <p>{!! Str::limit(nl2br($post->body), 1500) !!}</p>
                         </div>
                         <div class="date">
                             <p>Updated: {{ $post->dated_at }}</p>
