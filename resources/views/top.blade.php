@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="button" class="btn btn-secondary" onclick="location.href='#WORKS'">作品ページへ<br><span>artwork room</span></button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='/artwork'">作品ページへ<br><span>artwork room</span></button>
         </div>
     </div>
 </section>
