@@ -29,9 +29,13 @@
         <!-- masonry -->
         <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
         
-        <!-- imagesloaded -->
+        <!-- imagesLoaded -->
         <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
+        <!-- Photoswipe -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.7/dist/photoswipe.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe-dynamic-caption-plugin@1.2.7/photoswipe-dynamic-caption-plugin.min.css">
+        
         <!-- Scripts -->
         @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/main.js'])
 

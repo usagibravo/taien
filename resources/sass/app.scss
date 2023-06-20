@@ -22,7 +22,7 @@ body {
 
 .section {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     padding: 7rem 0;
 }
 
@@ -144,7 +144,7 @@ body {
     width: auto;
     height: 100%;
     margin-inline: 5%;
-    background-color: rgba(248, 249, 250, 0.7);
+    background-color: rgba(236, 236, 236, 0.7);
     z-index: 10;
     padding: 1.5rem;
 
@@ -269,6 +269,10 @@ ul.footer-bottom-list {
   text-align: center;
 }
 
+/*
+ * Artwork Gallery
+ */
+
 // masonry
 .clearfix:before, .clearfix:after {
 	content: " ";
@@ -290,10 +294,12 @@ ul.footer-bottom-list {
 	margin: 0 auto;
 	position: relative;
 }
-/*#header {
-
+#header {
+  ul {
+    list-style-type: none;
+  }
 }
-*/
+
 /*img {
 	padding: 0;
 	margin: 0;
@@ -346,4 +352,21 @@ p#ww {
 	/*max-width: 480px;*/
 	width: 300px;
 }
+}
+
+/*
+ * Photoswipe
+ */
+
+.pswp__dynamic-caption {
+  color: #999 !important; 
+  width: 100%;
+}
+.pswp__dynamic-caption a {
+//  color: #fff;
+  text-decoration: underline;
+}
+
+.pswp {
+  --pswp-icon-color: #999 !important;
 }
