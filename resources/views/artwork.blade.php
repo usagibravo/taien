@@ -65,7 +65,9 @@ function switchWorkType(newWorkType) {
             $container.masonry({
             itemSelector: '.item',
             isFitWidth: true,
-            columnWidth: 360
+            columnWidth: 360,
+            initLayout: false,
+            transitionDuration: '0.8s'
             });
         });
         $('#ww span').text($(window).width());
@@ -73,9 +75,14 @@ function switchWorkType(newWorkType) {
             $('#ww span').text($(window).width());
         });	
     });
-    
+
     lastWorkType = newWorkType;
     document.getElementById('container').innerHTML = contentHTML;
+
+    jQuery(function($){
+        var $container = $('#container');
+        $container.masonry();
+    })
 }
 
 switchWorkType(workType);
