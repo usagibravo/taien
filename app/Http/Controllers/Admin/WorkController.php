@@ -29,6 +29,7 @@ class WorkController extends Controller
             //var_dump($request->file('image'));
             $path = $request->file('image')->store('public/image');
             $work->image_path = basename($path);
+            list($work->image_width, $work->image_height) = getimagesize(Storage::path($path));
         } else {
             $work->image_path = null;
         }
@@ -53,7 +54,7 @@ class WorkController extends Controller
             $works = Work::where('title', $cond_title)->get();
         //var_dump($posts);
         } else {
-            $works = Work::all();
+            $works = Work::orderBy('work_type', 'asc')->orderBy('showing_order', 'asc')->get();
         }
         
         //\Debugbar::info('デバッガーの情報ですよ');

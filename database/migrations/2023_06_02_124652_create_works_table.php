@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('image_path')->nullable();
             $table->integer('showing_order')->nullable();
             $table->string('work_type');
+            $table->integer('image_width');
+            $table->integer('image_height');
             $table->timestamps();
         });
     }

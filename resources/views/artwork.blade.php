@@ -9,198 +9,99 @@
         <div id="header">
             <h1 class="mb-md-5"><span>artworks gallary</span></h1>
             <div class="d-grid gap-2 d-md-flex justify-content-center mb-md-3">
-                <button type="button" class="btn btn-outline-secondary btn-sm active" aria-pressed="true">All</button>
-                <button type="button" class="btn btn-outline-secondary btn-sm">漢字書</button>
-                <button type="button" class="btn btn-outline-secondary btn-sm">ひらがな</button>
-                <button type="button" class="btn btn-outline-secondary btn-sm">篆刻</button>
+                <button type="button" id="btn-all" onclick="location.href='/artwork?work_type=btn-all'" class="btn btn-outline-secondary btn-sm">all</button>
+                <button type="button" id="btn-kanji" onclick="location.href='/artwork?work_type=btn-kanji'" class="btn btn-outline-secondary btn-sm">漢字書</button>
+                <button type="button" id="btn-kana" onclick="location.href='/artwork?work_type=btn-kana'" class="btn btn-outline-secondary btn-sm">ひらがな</button>
+                <button type="button" id="btn-tenkoku" onclick="location.href='/artwork?work_type=btn-tenkoku'" class="btn btn-outline-secondary btn-sm">篆刻</button>
             </div>
             <!-- <p id="ww"> Window Width : <span></span></p> -->
         </div>
         <hr class="my-md-5 my-ms-3">
         <div class="pswp-gallery" id="container">
-            <div class="item pswp-gallery__item">
-                <a href="/images/1368913_m.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1368913_m.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <p class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</p>
-            </div>
-            <div class="item">
-                <a href="/images/hiragana.jpg" data-pswp-width="1668" data-pswp-height="2500" target="_blank"></a>
-                    <img src="/images/hiragana.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1625819_s.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1625819_s.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1368913_m.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1368913_m.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/hiragana.jpg" data-pswp-width="1668" data-pswp-height="2500" target="_blank"></a>
-                    <img src="/images/hiragana.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1625819_s.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1625819_s.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1368913_m.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1368913_m.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/hiragana.jpg" data-pswp-width="1668" data-pswp-height="2500" target="_blank"></a>
-                    <img src="/images/hiragana.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1625819_s.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1625819_s.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1368913_m.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1368913_m.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/hiragana.jpg" data-pswp-width="1668" data-pswp-height="2500" target="_blank"></a>
-                    <img src="/images/hiragana.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1625819_s.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1625819_s.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1368913_m.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1368913_m.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/hiragana.jpg" data-pswp-width="1668" data-pswp-height="2500" target="_blank"></a>
-                    <img src="/images/hiragana.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1625819_s.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1625819_s.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1368913_m.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1368913_m.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/hiragana.jpg" data-pswp-width="1668" data-pswp-height="2500" target="_blank"></a>
-                    <img src="/images/hiragana.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1625819_s.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1625819_s.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1368913_m.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1368913_m.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/hiragana.jpg" data-pswp-width="1668" data-pswp-height="2500" target="_blank"></a>
-                    <img src="/images/hiragana.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
-            <div class="item">
-                <a href="/images/1625819_s.jpg" data-pswp-width="2500" data-pswp-height="1668" target="_blank"></a>
-                    <img src="/images/1625819_s.jpg" alt="item1">
-                    <p>title 1</p>
-                </a>
-                <div class="pswp-caption-content"><strong>Lorem ipsum dolor (1933)</strong><br>Color photograph<br>12 x 10</div>
-            </div>
+            HTML Placeholder
         </div> <!-- Container -->
+        <hr class="my-md-5 my-ms-3 d-block">
     </div> <!-- Section -->
 </section>
 @endsection
-<!--
-<div class="demo"></div>
-<div class="demo"><img src="//unsplash.it/602/660" alt="" class="demo-image"></div>
-<div class="demo"><img src="//unsplash.it/660/646" alt="" class="demo-image"></div>
-<div class="demo"><img src="//unsplash.it/660/646" alt="" class="demo-image"></div>
-<div class="demo"><img src="//unsplash.it/813/455" alt="" class="demo-image"></div>
-<div class="demo"><img src="//unsplash.it/470/896" alt="" class="demo-image"></div>
-<div class="demo"><img src="//unsplash.it/664/653" alt="" class="demo-image"></div>
-<div class="demo"><img src="//unsplash.it/708/313" alt="" class="demo-image"></div>
-<div class="demo"><img src="//unsplash.it/738/578" alt="" class="demo-image"></div>
-<div class="demo"><img src="//unsplash.it/458/482" alt="" class="demo-image"></div>
--->
+
 @section('body-script')
 
-<script>
+<script> // HTML Generation
+
+const workType = '{{ is_null($work_type)?'btn-all':$work_type }}';
+const works = {!!json_encode($works, JSON_UNESCAPED_UNICODE)!!};
+
+const workTypeArray = {'btn-kanji':'漢字書', 'btn-kana':'ひらがな', 'btn-tenkoku':'篆刻'};
+var lastWorkType = 'btn-all';
+btnArray = {'all':document.getElementById('btn-all'), 'btn-kanji':document.getElementById('btn-kanji'), 'btn-kana':document.getElementById('btn-kana'), 'btn-tenkoku':document.getElementById('btn-tenkoku')};
+
+function nvl(val1, val2){
+    return (val1 == null)?val2:val1;
+}
+
+function switchWorkType(newWorkType) {
+    var contentHTML = '';
+    var lastButton = document.getElementById(lastWorkType);
+    var newButton = document.getElementById(newWorkType);
+
+    lastButton.classList.remove('active');
+    lastButton.removeAttribute('aria-pressed');
+    newButton.classList.add('active');
+    newButton.setAttribute('aria-pressed', 'true');
+    for(i=0; i< works.length; i++) {
+        if(newWorkType == 'btn-all' || workTypeArray[newWorkType] == works[i].work_type) {
+            contentHTML += '<div class="item">\n  <a href="/storage/image/' + works[i].image_path + '" data-pswp-width="' + works[i].image_width + '" data-pswp-height="' + works[i].image_height + '" target="_blank"></a>\n';
+            contentHTML += '  <img src="/storage/image/' + works[i].image_path + '" alt="' + works[i].title + '">\n'
+            contentHTML += '  <p>' + works[i].title + '</p>\n'
+            contentHTML += '  <p class="pswp-caption-content"><b>' + works[i].title + '</b><br>' + nvl(works[i].body, '').replace(/\n/ , '<br>') + '</p>\n'
+            contentHTML += '</div>\n'
+        }
+    }
+
+    jQuery(function($){
+        var $container = $('#container');
+        $container.imagesLoaded(function(){
+            $container.masonry({
+            itemSelector: '.item',
+            isFitWidth: true,
+            columnWidth: 360
+            });
+        });
+        $('#ww span').text($(window).width());
+        $(window).resize(function () {
+            $('#ww span').text($(window).width());
+        });	
+    });
+    
+    lastWorkType = newWorkType;
+    document.getElementById('container').innerHTML = contentHTML;
+}
+
+switchWorkType(workType);
+
+</script>
+<!--
+<script> // Masonry
 jQuery(function($){
-  var $container = $('#container');
+    var $container = $('#container');
     $container.imagesLoaded(function(){
-      $container.masonry({
+        $container.masonry({
         itemSelector: '.item',
         isFitWidth: true,
         columnWidth: 360
-      });
+        });
     });
+    alert('hello!');
     $('#ww span').text($(window).width());
-	$(window).resize(function () {
-		$('#ww span').text($(window).width());
-	});	
+    $(window).resize(function () {
+        $('#ww span').text($(window).width());
+    });	
 });
-</script>
 
-<script type="module">
+</script>
+-->
+<script type="module"> // PhotoSwipe
     import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.7/dist/photoswipe-lightbox.esm.min.js';
     import PhotoSwipeDynamicCaption from 'https://cdn.jsdelivr.net/npm/photoswipe-dynamic-caption-plugin@1.2.7/photoswipe-dynamic-caption-plugin.esm.js';
 

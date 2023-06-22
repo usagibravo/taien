@@ -31,6 +31,7 @@
                     <table class="table table-dark">
                         <thead>
                             <tr>
+                                <th width="10%">作品タイプ</th>
                                 <th width="10%">順序</th>
                                 <th width="20%">タイトル</th>
                                 <th width="40%">本文</th>
@@ -41,6 +42,7 @@
                         <tbody>
                             @foreach($works as $work)
                                 <tr>
+                                    <td>{{ $work->work_type }}</td>
                                     <td>{{ $work->showing_order }}</td>
                                     <td>{{ Str::limit($work->title, 50) }}</td>
                                     <td>{{ Str::limit($work->body, 100) }}</td>

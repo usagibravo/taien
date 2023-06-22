@@ -19,9 +19,8 @@ Route::get('/', function () {
 use App\Http\Controllers\NewsController as PublicNewsController;
 Route::get('/', [PublicNewsController::class, 'index_lp'])->name('news.index_lp');
 
-Route::get('/artwork', function() {
-    return view('artwork');
-});
+use App\Http\Controllers\ArtworkController as PublicArtworkController;
+Route::get('/artwork', [PublicArtworkController::class, 'show_gallery'])->name('artwork');
 
 use App\Http\Controllers\ContactController as PublicContactController;
 Route::controller(PublicContactController::class)->prefix('contact')->name('contact.')->group(function () {

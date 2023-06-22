@@ -22,6 +22,12 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-md-2">表示順序（任意）</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" name="showing_order" value="{{ old('showing_order') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-md-2">本文（オプション）</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="5">{{ old('body') }}</textarea>

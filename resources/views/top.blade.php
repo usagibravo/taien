@@ -21,19 +21,19 @@
         <h1 class="mb-md-5">作品<br><span>artworks</span></h1>
         <div class="row align-center mb-md-5">
             <div class="col">
-                <a href="#KANJI">
+                <a href="{{ route('artwork', ['work_type' => 'btn-kanji']) }}">
                     <img class="mb-md-3" src="images/key-image-sho.jpg" alt="作品：漢字書">
                 </a>
                 <h5 class="ms-md-5">漢字書</h5>
             </div>
             <div class="col">
-                <a href="#HIRAGANA">
+                <a href="{{ route('artwork', ['work_type' => 'btn-kana']) }}">
                     <img class="mb-md-3" src="images/hiragana.jpg" alt="作品：ひらがな">
                 </a>
                 <h5 class="ms-md-5">ひらがな</h5>
             </div>
             <div class="col">
-                <a href="#TENKOKU">
+                <a href="{{ route('artwork', ['work_type' => 'btn-tenkoku']) }}">
                     <img class="mb-md-3" src="images/work_icon.jpeg" alt="作品：篆刻">
                 </a>
                 <h5 class="ms-md-5">篆刻</h5>
@@ -46,9 +46,7 @@
 </section>
 <section id="PROFILE" class="section-profile bg bg-light">
     <div class="profile-top sub-section container-md">
-        <div class="col-md-4 item1">
-<!--           <img src="images/hiragana.jpg" alt="漢字書">
--->        </div>
+        <div class="col-md-4 item1"></div>
         <div class="col-md-8 item2">
             <div class="col-text mt-md-5">
                 <h2 class="mb-md-5">大野 泰園</h2>
