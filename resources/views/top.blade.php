@@ -19,24 +19,24 @@
 <section id="WORKS" class="section bg bg-light">
     <div class="container-md">
         <h1 class="mb-md-5">作品<br><span>artworks</span></h1>
-        <div class="row align-center mb-md-5">
-            <div class="col">
+        <div class="row align-center mb-md-5 d-flex text-center">
+            <div class="col-md-4">
                 <a href="{{ route('artwork', ['work_type' => 'btn-kanji']) }}">
-                    <img class="mb-md-3" src="images/key-image-sho.jpg" alt="作品：漢字書">
+                    <img class="mb-md-3" src="images/works_section1.png" height="300" width="300" alt="作品：漢字書">
                 </a>
-                <h5 class="ms-md-5">漢字書</h5>
+                <h5>漢字書</h5>
             </div>
-            <div class="col">
+            <div class="col-md-4">
                 <a href="{{ route('artwork', ['work_type' => 'btn-kana']) }}">
-                    <img class="mb-md-3" src="images/hiragana.jpg" alt="作品：ひらがな">
+                    <img class="mb-md-3" src="images/works_section2.png" alt="作品：ひらがな">
                 </a>
-                <h5 class="ms-md-5">ひらがな</h5>
+                <h5>ひらがな</h5>
             </div>
-            <div class="col">
+            <div class="col-md-4">
                 <a href="{{ route('artwork', ['work_type' => 'btn-tenkoku']) }}">
-                    <img class="mb-md-3" src="images/work_icon.jpeg" alt="作品：篆刻">
+                    <img class="mb-md-3" src="images/works_section3.png" alt="作品：篆刻">
                 </a>
-                <h5 class="ms-md-5">篆刻</h5>
+                <h5>篆刻</h5>
             </div>
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
