@@ -5,15 +5,9 @@
 @section('content')
 <section class="firstview">
     <div class="slider">
-        <div class="slick-img">
-            <img src="images/1625819_s.jpg" alt="書家の写真" />
-        </div>
-        <div class="slick-img">
-            <img src="images/1368913_m.jpg" alt="筆と硯の写真" />
-        </div>
-        <div class="slick-img">
-            <img src="images/key-image-sho.jpg" alt="漢字書の写真" />
-        </div>
+        <div class="slick__bg slick__bg01" alt="書家の写真"></div>
+        <div class="slick__bg slick__bg02"> alt="筆と硯の写真"</div>
+        <div class="slick__bg slick__bg03"> alt="漢字書の写真"</div>
     </div>
 </section>
 <section id="WORKS" class="section bg bg-light">

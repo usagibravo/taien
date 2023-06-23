@@ -91,11 +91,36 @@ body {
     display: block;
 }
 
+/*
+ * Firstview
+ */
+
+// 共通クラス
+.slick__bg {
+//  padding-bottom: 16.5%;
+  width: auto;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Image url
+.slick__bg01 {
+  background-image: url(/images/1625819_s.jpg);
+}
+.slick__bg02 {
+  background-image: url(/images/1368913_m.jpg);
+}
+.slick__bg03 {
+  background-image: url(/images/key-image-sho.jpg);
+}
+
+/*
 .slider {
     height: auto;
     width: auto;
     margin-inline: auto;
-    overflow: hidden; /* 画像がはみ出ないようにする */
+    overflow: hidden;
   }
   .slick-img img {
     display: block;
@@ -104,6 +129,7 @@ body {
     width: 100%;
     object-position: center center;
   }
+  */
   @keyframes zoomUp {
     0% {
       transform: scale(1);
