@@ -151,10 +151,12 @@ body {
   //  background-image: url(../../images/hiragana.jpg); 
   // }
 
-    background-image: url(../../images/hiragana.jpg);
+    background-image: url(../../images/profile_img2.png);
     background-position: left;
     background-size: auto 100vh;
     background-repeat: no-repeat;
+    background-color:rgba(255, 255, 255, 0.7)!important;
+    background-blend-mode: screen;
   
   .col-md-4 img {
     display: block;
@@ -235,7 +237,7 @@ body {
   height: 100vh;
   background-image: url(/images/contact_bg_img.png);
   background-color:rgba(255, 255, 255, 0.9)!important;
-  background-blend-mode:screen;
+  background-blend-mode: screen;
 }
 
 /*
