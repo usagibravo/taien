@@ -9,28 +9,28 @@
          <div class="col-md-8 mx-auto">
             <h2 class="mb-md-3">お問い合わせフォーム</h2>
             <div class="form-group row">
-               <div class="col-md-10 mb-md-3">
+               <div class="col-md-4 mb-md-3">
                   <label for="formNameInput" class="form-label">お名前（必須）</label>
                   <input class="form-control" type="text" placeholder="" id="formNameInput" name="name" autocomplete="name">
                   <p class="text-danger attention attention-name"></p>
                </div>
             </div>
             <div class="form-group row">
-               <div class="col-md-10 mb-md-3">
+               <div class="col-md-4 mb-md-3">
                   <label for="formEmailInput" class="form-label">メールアドレス（必須）</label>
                   <input class="form-control" type="email" id="formEmailInput" placeholder="name@example.com" name="email" autocomplete="email" required>
                   <p class="text-danger attention attention-email"></p>
                </div>
             </div>
             <div class="form-group row">
-               <div class="col-md-10 mb-md-3">
+               <div class="col-md-12 mb-md-3">
                   <label for="formSubjectInput" class="form-label">件名（必須）</label>
                   <input class="form-control" type="text" placeholder="" id="formSubjectInput" name="subject">
                   <p class="text-danger attention attention-subject"></p>
                </div>
             </div>
             <div class="form-group row">
-               <div class="col-md-10 mb-md-3">
+               <div class="col-md-12 mb-md-3">
                   <label for="formBodyInput" class="form-label">お問い合わせ内容（必須）</label>
                   <textarea class="form-control" id="formBodyInput" rows="10"  placeholder="こちらに入力してください"name="body"></textarea>
                   <p class="text-danger attention attention-body"></p>

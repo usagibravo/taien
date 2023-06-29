@@ -106,13 +106,13 @@ body {
 
 // Image url
 .slick__bg01 {
-  background-image: url(/images/1625819_s.jpg);
+  background-image: url(/images/hero1.png);
 }
 .slick__bg02 {
-  background-image: url(/images/1368913_m.jpg);
+  background-image: url(/images/hero2.png);
 }
 .slick__bg03 {
-  background-image: url(/images/key-image-sho.jpg);
+  background-image: url(/images/hero3.png);
 }
 
 /*
@@ -235,8 +235,11 @@ body {
   }
 
   height: 100vh;
+  width: auto;
   background-image: url(/images/contact_bg_img.png);
-  background-color:rgba(255, 255, 255, 0.9)!important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:rgba(255, 255, 255, 0.6)!important;
   background-blend-mode: screen;
 }
 
