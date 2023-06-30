@@ -7,8 +7,8 @@
 <section id="ARTWORK" class="section-artwork">
     <div id="wrapper">
         <div id="header">
-            <h1 class="mb-md-5"><span>artworks gallary</span></h1>
-            <div class="d-grid gap-2 d-md-flex justify-content-center mb-md-3">
+            <h1 class="mb-mdー5"><span>artworks gallary</span></h1>
+            <div class="d-grid gap-2 d-flex justify-content-center mb-md-3">
                 <button type="button" id="btn-all" onclick="location.href='/artwork?work_type=btn-all'" class="btn btn-outline-secondary btn-sm">all</button>
                 <button type="button" id="btn-kanji" onclick="location.href='/artwork?work_type=btn-kanji'" class="btn btn-outline-secondary btn-sm">漢字書</button>
                 <button type="button" id="btn-kana" onclick="location.href='/artwork?work_type=btn-kana'" class="btn btn-outline-secondary btn-sm">ひらがな</button>
