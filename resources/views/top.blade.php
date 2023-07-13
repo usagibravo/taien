@@ -5,9 +5,9 @@
 @section('content')
 <section class="firstview">
     <div class="slider">
-        <div class="slick__bg slick__bg01" alt="書家の写真"></div>
-        <div class="slick__bg slick__bg02"> alt="筆と硯の写真"</div>
-        <div class="slick__bg slick__bg03"> alt="漢字書の写真"</div>
+        <div class="slick__bg slick__bg01"></div>
+        <div class="slick__bg slick__bg02"></div>
+        <div class="slick__bg slick__bg03"></div>
     </div>
 </section>
 <section id="WORKS" class="section bg bg-light">
@@ -63,6 +63,7 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
         </div>
     </div>
 </section>
@@ -86,7 +87,7 @@
                     </div>
                     <div class="post-image col-md-4">
                         @if ($post->image_path)
-                            <img src=" {{ asset('storage/image/' . $post->image_path) }} ">
+                            <img src=" {{ asset('storage/image/' . $post->image_path) }}" alt="お知らせ画像">
                         @endif
                     </div>
                 </div>
